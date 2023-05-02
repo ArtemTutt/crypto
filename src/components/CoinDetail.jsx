@@ -13,7 +13,8 @@ const CoinDetail = () => {
 
     return (
         <div className="my-6">
-            <div className='flex gap-2 items-center'>
+            <coingecko-coin-price-chart-widget  coin-id={id} currency="usd" height="300" locale="ru"></coingecko-coin-price-chart-widget>
+            <div className='flex gap-2 items-center mt-4'>
                 <img src={response.image.small} alt={response.name}/>
                 <h1 className="text-2xl mb-2 capitalize font-bold">{response.name}</h1>
             </div>
